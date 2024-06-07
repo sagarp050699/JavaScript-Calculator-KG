@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Create a two buttons for css practicticing -->
+      <button
+        class="bag-btn"
+        onclick="  cartQuantity++ ; document.querySelector('#cart-summery').
+        innerText = `Your Bag Has ${cartQuantity} Items`         "
+      >
+        Add to Bag
+      </button>
+
+      <button
+      id="wishlist"
+      onclick="
+        cartQuantity --  ; document.querySelector('#cart-summery').
+        innerText = `Your Bag Has ${cartQuantity} Items`    "
+    >
+      Move to  WISHLIST
+    </button>
+    <button
+        class="bag-btn"
+        onclick="
+         cartQuantity += 2 ; document.querySelector('#cart-summery').
+        innerText = `Your Bag Has ${cartQuantity} Items`    "
+      >
+        Add 1 + 1 Sale Item
+      </button> 
+
+      <h1 id="cart-summery"> </h1>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
